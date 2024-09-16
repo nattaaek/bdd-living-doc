@@ -1,3 +1,7 @@
+You're absolutely right! The README should include information about the Rust backend project as well. Here's an updated `README.md` that you can copy and paste directly into your project:
+
+---
+
 # 🌟 BDD Living Documentation POC
 
 Welcome to the **BDD Living Documentation** project! 🎉
@@ -8,6 +12,7 @@ This proof-of-concept (POC) aims to bring your Behavior-Driven Development (BDD)
 
 - [About the Project](#about-the-project)
 - [Features](#features)
+- [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -25,11 +30,8 @@ This proof-of-concept (POC) aims to bring your Behavior-Driven Development (BDD)
 
 This POC showcases how you can transform your BDD specifications into an interactive web application using:
 
-- 🌌 **Astro**: For building fast and content-focused websites.
-- ⚛️ **React**: For creating dynamic and interactive UI components.
-- 💙 **TypeScript**: For type-safe code that scales.
-- 🌐 **WebSockets**: For real-time updates to your documentation.
-- 📡 **Axios**: For fetching data from our backend service.
+- **Frontend**: Built with 🌌 **Astro**, ⚛️ **React**, and 💙 **TypeScript** for a seamless developer experience.
+- **Backend**: Powered by ⚙️ **Rust** for blazing-fast performance and reliability.
 
 Our goal is to create a tool that keeps your documentation in sync with your codebase, making it easier for teams to understand and collaborate on the application's behavior.
 
@@ -40,8 +42,24 @@ Our goal is to create a tool that keeps your documentation in sync with your cod
 - **Dynamic Feature List**: Automatically displays all your BDD features.
 - **Interactive Scenarios**: Expandable scenarios to dive into the steps.
 - **Real-Time Updates**: Documentation updates live as you change your BDD specs.
-- **Modern Stack**: Built with Astro, React, and TypeScript for a seamless developer experience.
+- **Modern Stack**: Built with cutting-edge technologies on both frontend and backend.
 - **Easy Setup**: Get up and running quickly with minimal configuration.
+
+---
+
+## Tech Stack
+
+- **Frontend**:
+  - 🌌 **Astro**
+  - ⚛️ **React**
+  - 💙 **TypeScript**
+  - 📡 **Axios**
+  - 🌐 **WebSockets**
+
+- **Backend**:
+  - ⚙️ **Rust**
+  - 📦 **Actix Web** (or your preferred Rust web framework)
+  - 📄 **Serde** for serialization/deserialization
 
 ---
 
@@ -54,7 +72,9 @@ Ready to bring your BDD documentation to life? Let's get started! 🎈
 Make sure you have the following installed:
 
 - **Node.js** (v14 or higher)
-- **npm** or **yarn**
+- **pnpm** 
+- **Rust** (latest stable version)
+- **Cargo** (comes with Rust)
 
 ### Installation
 
@@ -65,34 +85,48 @@ Make sure you have the following installed:
    cd bdd-living-doc
    ```
 
-2. **Install dependencies**:
+2. **Install frontend dependencies**:
 
    ```bash
-   npm install
-   # or
-   yarn
+   cd frontend
+   pnpm install
+   ```
+
+3. **Build the backend**:
+
+   ```bash
+   cd ../backend
+   cargo build --release
    ```
 
 ### Running the Project
 
-1. **Start the development server**:
+1. **Start the backend server**:
 
    ```bash
-   npm run dev
-   # or
-   yarn dev
+   cd backend
+   cargo run --release
    ```
 
-2. **Open your browser** and navigate to `http://localhost:3000` to see the application in action!
+   The backend server will start on `http://localhost:8080`.
+
+2. **Start the frontend development server**:
+
+   ```bash
+   cd ../frontend
+   pnpm run dev
+   ```
+
+3. **Open your browser** and navigate to `http://localhost:3000` to see the application in action!
 
 ---
 
 ## Usage
 
-- **View Features**: The homepage displays a list of all BDD features.
+- **View Features**: The homepage displays a list of all BDD features fetched from the Rust backend.
 - **Expand Scenarios**: Click on a feature to reveal its scenarios.
 - **Explore Steps**: Click on a scenario to see the detailed steps.
-- **Real-Time Updates**: Modify your BDD specs, and the documentation updates automatically!
+- **Real-Time Updates**: Modify your BDD specs in the backend, and the documentation updates automatically!
 
 ---
 
@@ -108,6 +142,8 @@ We're just getting started! Here's what's coming up:
 - [ ] **CI/CD Integration**: Automated updates with your build pipeline.
 - [ ] **Multi-language Support**: Internationalization for global teams.
 - [ ] **Customization**: Themes and layouts to match your brand.
+- [ ] **Backend Enhancements**: Implement caching, improve performance.
+- [ ] **Integration with Testing Frameworks**: Link documentation to test results.
 
 Want to see a feature that's not listed? [Open an issue](https://github.com/yourusername/bdd-living-doc/issues) and let us know!
 
@@ -135,12 +171,12 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 Have questions or want to say hi? 👋
 
-- **Your Name**
-- **Email**: [youremail@example.com](mailto:youremail@example.com)
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/yourprofile)
+- **Nattaaek Wattanuyan**
+- **Email**: [w.nattaaek@yahoo.com](mailto:w.nattaaek@yahoo.com)
+- **Twitter**: [@w_nattaaek](https://twitter.com/w_nattaaek)
+- **LinkedIn**: [nattaaek](https://linkedin.com/in/nattaaek)
 
-Project Link: [https://github.com/yourusername/bdd-living-doc](https://github.com/yourusername/bdd-living-doc)
+Project Link: [https://github.com/nattaaek/bdd-living-doc](https://github.com/nattaaek/bdd-living-doc)
 
 ---
 
@@ -149,7 +185,10 @@ Project Link: [https://github.com/yourusername/bdd-living-doc](https://github.co
 - **Astro**: [https://astro.build/](https://astro.build/)
 - **React**: [https://reactjs.org/](https://reactjs.org/)
 - **TypeScript**: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
+- **Rust**: [https://www.rust-lang.org/](https://www.rust-lang.org/)
+- **Actix Web**: [https://actix.rs/](https://actix.rs/)
 - **Axios**: [https://axios-http.com/](https://axios-http.com/)
+- **WebSockets**: For real-time communication.
 - **Font Awesome**: For awesome icons!
 - **Unsplash**: For inspiring images.
 
