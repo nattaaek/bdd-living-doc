@@ -190,7 +190,7 @@ Project Link: [https://github.com/nattaaek/bdd-living-doc](https://github.com/na
 
 ---
 
-Made with ❤️ by Your Name
+Made with ❤️ by Egg
 
 ---
 
