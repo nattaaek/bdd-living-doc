@@ -1,7 +1,3 @@
-You're absolutely right! The README should include information about the Rust backend project as well. Here's an updated `README.md` that you can copy and paste directly into your project:
-
----
-
 # 🌟 BDD Living Documentation POC
 
 Welcome to the **BDD Living Documentation** project! 🎉
