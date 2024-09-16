@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/MainLayout.astro';
+import FeatureList from '../components/FeatureList.tsx';
+---
+
+<Layout>
+  <h1 class="text-3xl font-bold mb-4">BDD Living Documentation</h1>
+  <FeatureList client:load />
+</Layout>
