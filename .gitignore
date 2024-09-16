@@ -37,6 +37,8 @@ lerna-debug.log*
 *.tgz
 
 # Rust/Cargo
+**/target/
+**/Cargo.lock
 
 # Rust debug files
 *.dSYM
