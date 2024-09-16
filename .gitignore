@@ -69,8 +69,5 @@ coverage/
 *~
 *.swo
 
-# GitHub files
-.github/
-
 # CI directories
 .circleci/
